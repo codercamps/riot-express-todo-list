@@ -1,9 +1,15 @@
-# .travis.yml file
 language: node_js
 node_js:
-  - "node"
   - "7"
+services:
+  - mongodb
 install:
   - npm install
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: /bin/sh deploy.sh
+  on:
+    branch: master
 script:
   - npm test
