@@ -13,3 +13,4 @@ deploy:
     branch: master
 script:
   - npm test
+    
