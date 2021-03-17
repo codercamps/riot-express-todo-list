@@ -2,3 +2,5 @@
 build/
 node_modules/
 npm-debug.log
+todo1.pem
+deploy.js
